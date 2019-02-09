@@ -16,11 +16,7 @@ namespace DAL.Repositories
         {
             db = context;
         }
-        //public OrderRepository()
-        //{
-        //    db = new MobileContext();
-        //}
-
+       
         public void Create(Order order)
         {
             db.Orders.Add(order);

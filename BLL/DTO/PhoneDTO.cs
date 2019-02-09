@@ -1,5 +1,4 @@
-﻿
-namespace BLL.DTO
+﻿namespace BLL.DTO
 {
     public class PhoneDTO
     {

@@ -15,10 +15,7 @@ namespace DAL.EF
 
         public MobileContext(string connectionString) : base("DbConnection")
         {
-        }
-        //public MobileContext() : base("DbConnection")
-        //{
-        //}
+        }        
     }
 
     public class StoreDbInitializer : DropCreateDatabaseIfModelChanges<MobileContext>

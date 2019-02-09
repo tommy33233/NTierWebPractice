@@ -17,11 +17,6 @@ namespace DAL.Repositories
             this.db = context;
         }
 
-        //public PhoneRepository()
-        //{
-        //    db = new MobileContext();
-        //}
-
         public void Create(Phone phone)
         {
             db.Phones.Add(phone);

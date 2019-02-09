@@ -14,11 +14,7 @@ namespace DAL.Repositories
         public EFunitOfWork(string connection)
         {
             db = new MobileContext(connection);
-        }
-        //public EFunitOfWork()
-        //{
-        //    db=new MobileContext();
-        //}
+        }      
 
         public IRepository<Phone> Phones
         {
@@ -26,9 +22,7 @@ namespace DAL.Repositories
             {
                 if (phoneRepository == null)
                     phoneRepository = new PhoneRepository(db);
-                //   phoneRepository=new PhoneRepository();
-
-
+               
                 return phoneRepository;
             }
         }
@@ -39,8 +33,7 @@ namespace DAL.Repositories
             {
                 if (orderRepository == null)
                     orderRepository = new OrderRepository(db);
-                // orderRepository=new OrderRepository();
-
+               
                 return orderRepository;
             }
         }
